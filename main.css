@@ -1,0 +1,28 @@
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: #222;
+}
+
+.block {
+    background-color: #eee;
+    width: 33.3%;
+    height: 33.3%;
+}
+
+.block svg {
+    text-align: center;
+    width: 60%;
+    height: 60%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/*
+.block:nth-child(3n) {border-right: none;}
+.block:nth-child(3n+1) {border-left: none;}
+.block:nth-child(-n+3) {border-top: none;}
+.block:nth-child(n+7) {border-bottom: none;}
+*/
