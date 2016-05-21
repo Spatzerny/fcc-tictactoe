@@ -1,15 +1,22 @@
 body {
     background-color: #f7f6f8;
+    overflow: hidden;
 }
 
-.container {
-    transform: rotate(-2deg);
+.cont-main {
+    /*because of percentage padding there's a container in a container*/
+    /*welcome to css*/
     margin: 20px auto 0 auto;
-    width: 180px;
-    height: 180px;
+    width: 620px;
+    height: 620px;
+    transform: rotate(-2deg);
+}
+.cont-game {
+    width: 68%;
+    height: 68%;
     background-image: url("../img/background.png");
     background-size: cover;
-    padding: 10px;
+    padding: 5%;
 }
 
 .row {
@@ -32,10 +39,3 @@ body {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
-
-/*
-.block:nth-child(3n) {border-right: none;}
-.block:nth-child(3n+1) {border-left: none;}
-.block:nth-child(-n+3) {border-top: none;}
-.block:nth-child(n+7) {border-bottom: none;}
-*/
