@@ -1,19 +1,32 @@
+body {
+    background-color: #f7f6f8;
+}
+
 .container {
-    width: 200px;
-    height: 200px;
-    background-color: #222;
+    transform: rotate(-2deg);
+    margin: 20px auto 0 auto;
+    width: 180px;
+    height: 180px;
+    background-image: url("../img/background.png");
+    background-size: cover;
+    padding: 10px;
+}
+
+.row {
+    height: 33.3%;
 }
 
 .block {
-    background-color: #eee;
+    display: inline-block;
     width: 33.3%;
-    height: 33.3%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .block svg {
     text-align: center;
-    width: 60%;
-    height: 60%;
+    width: 34%;
+    height: 34%;
     position: relative;
     top: 50%;
     left: 50%;
