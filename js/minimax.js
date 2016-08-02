@@ -1,3 +1,9 @@
+/*START TREE GENERATION STUFF*/
+
+function generateTree() {
+    return branchOut(['e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e'], 'x');
+}
+
 function checkEnd(board){
     var l = [[0,1,2],[3,4,5],[6,7,8], //horizontals
              [0,3,6],[1,4,7],[2,5,8], //verticals
@@ -72,6 +78,8 @@ function branchOut(b, c){
     
     return thisBranch;
 }
+/*END TREE GENERATION STUFF*/
+
 
 //evaluate the moves and pick a random one if multiple moves of equal value (for AI)
 function pickMove(branch){
